@@ -78,6 +78,7 @@ body {
 }
 .link-info, .inform-link {
   font-family: 'quicksanddash';
+  font-weight: bold;
   text-decoration: none;
   color: white;
   font-size: 16px;

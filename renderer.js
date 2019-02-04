@@ -4,7 +4,10 @@
 (function(){
     window.$ = window.jQuery = require('jquery');
 
-    const {BrowserWindow} = require('electron').remote
+    const electron = require('electron')
+
+    const {BrowserWindow} = electron.remote
+    const shell = electron.shell
 
     function init() {
         // Minimize task
@@ -37,14 +40,12 @@
                     $(element).show();
                     $('.result').append('<a class="link-info" href="#!" id="'+arg.message+'">>> Go to link <<</a>');
                     $('.link-info').click(function(){
-                        var open = require("open");
-                        open($(this).attr('id'));
+                        shell.openExternal($(this).attr('id'));
                     })
                 })
             });
             $('.github-corner').click(function(){
-                var open = require("open");
-                open($(this).attr('id'));
+                shell.openExternal($(this).attr('id'));
             })
         }
     };

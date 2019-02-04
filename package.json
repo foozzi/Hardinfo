@@ -1,6 +1,6 @@
 {
   "name": "Hardinfo",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Collect and share information about your computer's hardware. Example paste with info - https://paste.teknik.io/JDUPy",
   "main": "main.js",
   "scripts": {
@@ -11,13 +11,12 @@
     "hardinfo"
   ],
   "devDependencies": {
-    "electron": "^1.4.1",
-    "electron-builder": "^8.6.0"
+    "electron": "^4.0.4",
+    "electron-builder": "^20.38.5"
   },
   "dependencies": {
-    "systeminformation": "^3.10.2",
+    "systeminformation": "^4.0.6",
     "jquery": "^3.1.1",
-    "teknik-paste": "^0.0.1",
-    "open": "^0.0.5"
+    "teknik-paste": "^0.0.1"
   }
 }
